@@ -16,8 +16,8 @@ jobs:
 
       - name: Upload Cypress Report
         if: always() # Certifique-se de que o relatório será salvo mesmo se os testes falharem
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: cypress-report # Nome do artifact
-          path: cypress/reports # Caminho onde o relatório está salvo
+          name: mochawesome-report # Nome do artifact
+          path: mochawesome-report # Caminho onde o relatório está salvo
           retention-days: 3 # Define que o artifact expira em 3 dias
