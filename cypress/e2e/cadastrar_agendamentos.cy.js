@@ -15,8 +15,8 @@ describe('Buscar agendamento', () => {
             .then((result)  => {
                // valida o retorno 
                expect(result.status).to.equal(200)
-               expect(result.body.firstname).to.equal('John')
-               expect(result.body.lastname).to.equal('Smith')
+               expect(result.body.firstname).to.equal('Josh')
+               expect(result.body.lastname).to.equal('Allen')
                expect(result.body.totalprice).to.equal(111)
             }) 
 
