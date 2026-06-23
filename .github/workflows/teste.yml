@@ -21,3 +21,5 @@ jobs:
           name: mochawesome-report # Nome do artifact
           path: mochawesome-report # Caminho onde o relatório está salvo
           retention-days: 3 # Define que o artifact expira em 3 dias
+          build: false
+          
